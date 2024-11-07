@@ -1,0 +1,49 @@
+// BEM = Block __Element --Modifier
+
+::selection {
+	background-color: #cce2ff;
+	color: rgba(0, 0, 0, 0.87);
+}
+
+html {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 14px;
+	line-height: 1.15;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+body,
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	padding: 0;
+	overflow-x: hidden;
+	min-width: 320px;
+	background: #fff;
+	font-size: 1rem;
+	line-height: 1.4285em;
+	color: rgba(0, 0, 0, 0.87);
+}
+
+.container-app {
+	display: flex;
+	align-items: center;
+    justify-content: center;
+	
+	height: 100vh;
+	font-size: 3rem;
+}
+
+/* App */
+
