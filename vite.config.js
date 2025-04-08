@@ -4,12 +4,27 @@ import react from "@vitejs/plugin-react-swc";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-	plugins: [react()],
+	css: {
+		preprocessorOptions: {
+			scss: {
+				api: "modern-compiler",
+			},
+		},
+	},
+
+	plugins: [
+		react({
+			input: ["src/styles/index.scss"],
+			refresh: true,
+		}),
+	],
+
 	// Server not needed if using Netlify Dev server
-	// server: {
-	// 	// open: true,
-	// 	port: 5555,
-	// },
+	server: {
+		// open: true,
+		port: 5555,
+		allowedHosts: ['5555.codeserver.watsonised.me', '8888.codeserver.watsonised.me',],
+	},
 	build: {
 		minify: true,
 		chunkSizeWarningLimit: 1500,

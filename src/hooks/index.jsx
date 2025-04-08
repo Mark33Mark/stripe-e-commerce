@@ -1,2 +1,2 @@
-export { useCounter } from "./useCounter";
-export { useProducts } from "./useProducts";
+export { useApi } from "./useApi";
+export { useFade } from "./useFade";

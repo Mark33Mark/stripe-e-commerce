@@ -4,11 +4,11 @@
     command     = "npm run build"
 
 [dev]
-    autoLaunch  = true
-
     # netlify server port
-    port = 5555
-    # targetPort = 5555
+    # autoLaunch  = true
+    # port = 5555
+    targetPort = 5555
+    command = "npm run dev"
 
 # [[edge_functions]]
 #  function = "index"
